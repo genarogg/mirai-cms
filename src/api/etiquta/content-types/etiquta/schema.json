@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etiqutas",
+  "info": {
+    "singularName": "etiquta",
+    "pluralName": "etiqutas",
+    "displayName": "etiqueta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "etiqueta": {
+      "type": "string",
+      "required": true
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Material",
+        "Estilo",
+        "Características",
+        "Detalles",
+        "Sostenibilidad"
+      ]
+    }
+  }
+}

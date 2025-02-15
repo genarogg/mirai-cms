@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "codigo": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "base_price": {
+      "type": "decimal",
+      "required": true
+    },
+    "discount_percentage": {
+      "type": "integer"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoria.categoria",
+      "inversedBy": "products"
+    },
+    "edad": {
+      "type": "enumeration",
+      "enum": [
+        "nino",
+        "nina",
+        "hombre",
+        "mujer"
+      ],
+      "required": true
+    },
+    "tallas": {
+      "displayName": "talla",
+      "type": "component",
+      "repeatable": true,
+      "component": "talla.talla",
+      "required": true
+    },
+    "etiquetas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etiquta.etiquta"
+    },
+    "img_main": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "prenda": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "botton",
+        "full-body"
+      ],
+      "required": true
+    },
+    "img_secundary": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "especificaciones": {
+      "displayName": "Especificaciones",
+      "type": "component",
+      "repeatable": false,
+      "component": "espesificaciones.especificaciones"
+    }
+  }
+}

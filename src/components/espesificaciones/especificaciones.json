@@ -1,0 +1,77 @@
+{
+  "collectionName": "components_espesificaciones_especificaciones",
+  "info": {
+    "displayName": "Especificaciones",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "transparency": {
+      "type": "enumeration",
+      "enum": [
+        "Opaco",
+        "Semi-opaco",
+        "Ligeramente transparente",
+        "Transparente",
+        "Ultra transparente",
+        "Transparencia estratégica",
+        "Transparencia por capas",
+        "Transparencia con efecto mojado",
+        "Transparencia con brillo"
+      ]
+    },
+    "Materiales": {
+      "type": "enumeration",
+      "enum": [
+        "Algodón 100%",
+        "Algodón orgánico 100%",
+        "Lino 100%",
+        "Lana 100%",
+        "Lana merino 100%",
+        "Cachemira 100%",
+        "Seda 100%",
+        "Bambú 100%",
+        "Yute 100%",
+        "Cáñamo 100%"
+      ]
+    },
+    "forro": {
+      "type": "enumeration",
+      "enum": [
+        "si",
+        "no"
+      ]
+    },
+    "grosor": {
+      "type": "enumeration",
+      "enum": [
+        "Fino",
+        "Medio",
+        "Grueso",
+        "Extrafino",
+        "Semigrueso",
+        "Ultra grueso",
+        "Ligero",
+        "Pesado"
+      ]
+    },
+    "fit": {
+      "type": "enumeration",
+      "enum": [
+        "Regular",
+        "Slim",
+        "Relaxed",
+        "Oversized",
+        "Skinny",
+        "Loose",
+        "Straight",
+        "Tapered",
+        "Bootcut",
+        "Wide-leg",
+        "Athletic",
+        "Classic"
+      ]
+    }
+  }
+}

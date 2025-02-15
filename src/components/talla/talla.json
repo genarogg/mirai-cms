@@ -1,0 +1,87 @@
+{
+  "collectionName": "components_talla_tallas",
+  "info": {
+    "displayName": "talla",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "talla": {
+      "type": "enumeration",
+      "enum": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "required": true
+    },
+    "stock": {
+      "type": "integer",
+      "required": true
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Negro #000000,",
+        "Gris muy oscuro #1a1a1a,",
+        "Gris oscuro #2f2f2f,",
+        "Gris #808080,",
+        "Gris claro #d3d3d3,",
+        "Blanco #ffffff,",
+        "Rojo oscuro #8b0000,",
+        "Rojo #ff0000,",
+        "Rojo claro #ff6666,",
+        "Salmón #ffa07a,",
+        "Fucsia #ff0080,",
+        "Rosa #ff00ff,",
+        "Rosa claro #ffc0cb,",
+        "Magenta #ff00ff,",
+        "Naranja oscuro #ff8c00,",
+        "Naranja #ffa500,",
+        "Amarillo #ffff00,",
+        "Amarillo claro #ffff80,",
+        "Dorado #ffd700,",
+        "Beige #f5f5dc,",
+        "Crema #fffdd0,",
+        "Marrón oscuro #654321,",
+        "Marrón #8b4513,",
+        "Marrón claro #cd853f,",
+        "Cobre #b87333,",
+        "Caqui #c3b091,",
+        "Verde oscuro #006400,",
+        "Verde #008000,",
+        "Verde claro #90ee90,",
+        "Verde lima #00ff00,",
+        "Verde menta #98ff98,",
+        "Verde esmeralda #50c878,",
+        "Verde oliva #808000,",
+        "Verde musgo #8a9a5b,",
+        "Cian #00ffff,",
+        "Turquesa #40e0d0,",
+        "Celeste #87ceeb,",
+        "Azul claro #add8e6,",
+        "Azul #0000ff,",
+        "Azul marino #000080,",
+        "Azul oscuro #00008b,",
+        "Azul índigo #4b0082,",
+        "Azul pizarra #6a5acd,",
+        "Violeta #ee82ee,",
+        "Púrpura #800080,",
+        "Morado oscuro #9400d3,",
+        "Lila #c8a2c8,",
+        "Lavanda #e6e6fa,",
+        "Granate #800000,",
+        "Plateado #c0c0c0,"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
